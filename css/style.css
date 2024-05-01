@@ -1363,7 +1363,7 @@ transition: all .3s;
     display: block;
     border-radius: 4px;
     font-size: 15px;
-    color: #aaa;
+    color: #585858;
     margin: 0 0 15px 0;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
