@@ -18,7 +18,7 @@
 <![endif]-->
  
 </head>
-<body style="color: white; background-color: black;">
+<body>
 <!--Header_section-->
 <header id="header_wrapper">
   <div class="container">
@@ -41,66 +41,67 @@
   </div>
 </header>
 <!--Header_section--> 
-<h1 style="color: black; text-align: center;">Kuaför Randevu Sistemi</h1>
+<h1 style="color: black; text-align: center; font-family: 'Raleway';" >Kuaför Randevu Sistemi</h1>
 
-<form style="margin-top: 100px;" id="randevuForm">
+<form  id="randevuForm">
   <input class="input-text" type="text" name="" value="Ad Soyad *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
-            <input class="input-text" type="text" name="" value="Telefon Numaranız *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
+  <input class="input-text" type="text" name="" value="Telefon Numaranız *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
   </div>
+  <br>
 
 <div style="margin-left: 10px;" id="hizmetler">
     <div class="hizmet">
         <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
         <label for="hizmet1">
-            <img src="img/haircut1.jpg" alt="Saç Kesimi">
-            <h3 style="color: #aaa;">Saç Kesimi</h3>
+          <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+            <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
             <p style="color: #aaa;">Fiyat: 50 TL</p>
         </label>
     </div>
     <div class="hizmet">
       <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
       <label for="hizmet1">
-          <img src="img/haircut1.jpg" alt="Saç Kesimi">
-          <h3 style="color: #aaa;">Saç Kesimi</h3>
+        <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+          <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
           <p style="color: #aaa;">Fiyat: 50 TL</p>
       </label>
   </div>
   <div class="hizmet">
     <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
     <label for="hizmet1">
-        <img src="img/haircut1.jpg" alt="Saç Kesimi">
-        <h3 style="color: #aaa;">Saç Kesimi</h3>
+      <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+        <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
         <p style="color: #aaa;">Fiyat: 50 TL</p>
     </label>
 </div>
 <div class="hizmet">
   <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
   <label for="hizmet1">
-      <img src="img/haircut1.jpg" alt="Saç Kesimi">
-      <h3 style="color: #aaa;">Saç Kesimi</h3>
+      <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+      <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
       <p style="color: #aaa;">Fiyat: 50 TL</p>
   </label>
 </div>
 <div class="hizmet">
   <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
   <label for="hizmet1">
-      <img src="img/haircut1.jpg" alt="Saç Kesimi">
-      <h3 style="color: #aaa;">Saç Kesimi</h3>
+    <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+      <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
       <p style="color: #aaa;">Fiyat: 50 TL</p>
   </label>
 </div>
 <div class="hizmet">
   <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
   <label for="hizmet1">
-      <img src="img/haircut1.jpg" alt="Saç Kesimi">
-      <h3 style="color: #aaa;">Saç Kesimi</h3>
+    <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
+      <h3 style="color: #aaa;"><br>Saç Kesimi</h3>
       <p style="color: #aaa;">Fiyat: 50 TL</p>
   </label>
 </div>
     <!-- Diğer hizmetler buraya eklenebilir -->
 </div>
 
-<input class="input-btn" type="submit" value="Randevu Al" onclick="randevuAl()">
+<input style="border-radius: 15px;" class="input-btn" type="submit" value="Randevu Al" onclick="randevuAl()">
 
 <div id="result"></div>
 
