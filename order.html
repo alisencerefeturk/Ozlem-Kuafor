@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Özlem Kuaför</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+ 
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+ 
+</head>
+<body style="color: white; background-color: black;">
+<!--Header_section-->
+<header id="header_wrapper">
+  <div class="container">
+    <div class="header_box">
+      <!--<div class="logo"><a href="#">Resume</a></div>-->
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="index.html" class="scroll-link">Anasayfa</a></li>
+			  <li><a href="#aboutUs" class="scroll-link">Hakkımızda</a></li>
+			  <li><a href="#service" class="scroll-link">Ürün ve Hizmetlerimiz</a></li>
+			  <li style="background-color: #fac800; border-radius: 12px;"><a href="#contact" class="scroll-link">Randevu Al</a></li>
+			</ul>
+      </div>
+	 </nav>
+    </div>
+  </div>
+</header>
+<!--Header_section--> 
+<h1 style="color: black; text-align: center;">Kuaför Randevu Sistemi</h1>
+
+<form style="margin-top: 100px;" id="randevuForm">
+  <input class="input-text" type="text" name="" value="Ad Soyad *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
+            <input class="input-text" type="text" name="" value="Telefon Numaranız *" onFocus="if(this.value==this.defaultValue)this.value='';" onBlur="if(this.value=='')this.value=this.defaultValue;" required>
+  </div>
+
+<div style="margin-left: 10px;" id="hizmetler">
+    <div class="hizmet">
+        <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+        <label for="hizmet1">
+            <img src="img/haircut1.jpg" alt="Saç Kesimi">
+            <h3 style="color: #aaa;">Saç Kesimi</h3>
+            <p style="color: #aaa;">Fiyat: 50 TL</p>
+        </label>
+    </div>
+    <div class="hizmet">
+      <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+      <label for="hizmet1">
+          <img src="img/haircut1.jpg" alt="Saç Kesimi">
+          <h3 style="color: #aaa;">Saç Kesimi</h3>
+          <p style="color: #aaa;">Fiyat: 50 TL</p>
+      </label>
+  </div>
+  <div class="hizmet">
+    <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+    <label for="hizmet1">
+        <img src="img/haircut1.jpg" alt="Saç Kesimi">
+        <h3 style="color: #aaa;">Saç Kesimi</h3>
+        <p style="color: #aaa;">Fiyat: 50 TL</p>
+    </label>
+</div>
+<div class="hizmet">
+  <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+  <label for="hizmet1">
+      <img src="img/haircut1.jpg" alt="Saç Kesimi">
+      <h3 style="color: #aaa;">Saç Kesimi</h3>
+      <p style="color: #aaa;">Fiyat: 50 TL</p>
+  </label>
+</div>
+<div class="hizmet">
+  <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+  <label for="hizmet1">
+      <img src="img/haircut1.jpg" alt="Saç Kesimi">
+      <h3 style="color: #aaa;">Saç Kesimi</h3>
+      <p style="color: #aaa;">Fiyat: 50 TL</p>
+  </label>
+</div>
+<div class="hizmet">
+  <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+  <label for="hizmet1">
+      <img src="img/haircut1.jpg" alt="Saç Kesimi">
+      <h3 style="color: #aaa;">Saç Kesimi</h3>
+      <p style="color: #aaa;">Fiyat: 50 TL</p>
+  </label>
+</div>
+    <!-- Diğer hizmetler buraya eklenebilir -->
+</div>
+
+<input class="input-btn" type="submit" value="Randevu Al" onclick="randevuAl()">
+
+<div id="result"></div>
+
+<script>
+  function randevuAl() {
+      var form = document.getElementById('randevuForm');
+      var ad = form.elements['ad'].value;
+      var telefon = form.elements['telefon'].value;
+      var selectedServices = document.querySelectorAll('input[name="hizmet"]:checked');
+      var resultDiv = document.getElementById('result');
+      var message = "";
+  
+      if (!ad || !telefon) {
+          resultDiv.innerHTML = "Lütfen ad ve telefon numarası giriniz.";
+          return false;
+      }
+  
+      message += "Ad: " + ad + "<br>";
+      message += "Telefon: " + telefon + "<br>";
+  
+      if (selectedServices.length === 0) {
+          resultDiv.innerHTML = "Lütfen en az bir hizmet seçin.";
+          return false;
+      }
+  
+      message += "<br>Seçtiğiniz hizmetler: <br>";
+      for (var i = 0; i < selectedServices.length; i++) {
+          message += selectedServices[i].value + "<br>";
+      }
+      message += "<br>Randevunuz alınmıştır.";
+      resultDiv.innerHTML = message;
+      return false; // Formun submit işlemi engelleniyor
+  }
+  </script>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script> 
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
+<script type="text/javascript" src="js/wow.js"></script> 
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>

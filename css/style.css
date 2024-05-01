@@ -109,7 +109,7 @@ top: 64%;
   background-color: #FEE16F;
 }
 .caption h2{
-color:#FFE270;
+color:#fac800;
 line-height:45px;
 font-size: 50px;
 }
@@ -253,7 +253,7 @@ figure.effect-oscar:hover p {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-	color:#fff;+++++++
+	color:#fff;
 }
 
 figure.effect-oscar:hover figcaption {
@@ -350,7 +350,8 @@ p {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: #F7F7F7;
+    color: white;
+    font-weight: 550;
 }
 
 .navStyle {
@@ -368,7 +369,7 @@ p {
 }
 
 .navStyle ul li:first-child {
-	/*margin:0px;*/;
+
 }
 
 .navStyle ul li:last-child {
@@ -594,6 +595,7 @@ a.read_more:hover {
 div#main-nav {
   width: 100%;
   text-align: center;
+
 }	
 .navbar-nav {
   width: 100%;
@@ -608,6 +610,33 @@ div#main-nav {
 
 /* Services
 ---------------------------------*/
+
+.randevuText {
+
+    padding: 15px 16px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #aaa;
+    margin: 0 0 15px 0;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.hizmet {
+    border: 1px transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    display: inline-block;
+}
+.hizmet img {
+    width: 100%;
+    height: auto;
+}
 
 #service {
     padding: 60px 0px;
@@ -713,7 +742,7 @@ color:#fff;
 }
 
 .service-list-col1 i {
-    display:;
+    display:none;
     color: #888;
     font-size: 19px;
     font-style: normal;
@@ -2394,7 +2423,7 @@ margin: 0 18px;
 .page_section.team{
 padding: 40px 0;
 }
-, #clients {
+#clients {
 padding: 40px 0;
 }
 .client_logos ul li {
