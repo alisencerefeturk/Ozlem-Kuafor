@@ -631,12 +631,19 @@ div#main-nav {
     padding: 10px;
     margin-bottom: 10px;
     width: 400px;
+    height: 400px;
     display: inline-block;
+    margin-left: 60px;
 }
 .hizmet img {
     width: 100%;
     height: auto;
 }
+
+.hizmet:hover {
+    cursor: pointer;
+    background-color: #f0f0f0;
+  }
 
 #service {
     padding: 60px 0px;
