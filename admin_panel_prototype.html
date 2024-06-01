@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 200px;
+            height: 100vh;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 20px;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .content {
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <a href="index.html">Anasayfa</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Randevular</a>
+        <a href="#">Hizmetler</a>
+        <a href="#">Müşteriler</a>
+        <a href="#">Ayarlar</a>
+        <a href="#">Çıkış</a>
+
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Hoşgeldiniz, Yönetici!</h1>
+        </div>
+        <div class="content">
+            <div class="card">
+                <h2>Son Randevular</h2>
+                <table>
+                    <tr>
+                        <th>Müşteri Adı</th>
+                        <th>Tarih</th>
+                        <th>Saat</th>
+                        <th>Hizmet</th>
+                    </tr>
+                    <tr>
+                        <td>Ali Veli</td>
+                        <td>01/06/2024</td>
+                        <td>10:00</td>
+                        <td>Saç Kesimi</td>
+                    </tr>
+                    <tr>
+                        <td>Ayşe Yılmaz</td>
+                        <td>01/06/2024</td>
+                        <td>11:00</td>
+                        <td>Manikür</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="card">
+                <h2>Hizmetler</h2>
+                <p>Saç Kesimi - 100 TL</p>
+                <p>Manikür - 50 TL</p>
+                <p>Pedikür - 60 TL</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
