@@ -1,157 +1,192 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Özlem Kuaför</title>
-<link rel="icon" href="favicon.png" type="image">
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
-<link href="css/animate.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Özlem Kuaför</title>
+  <link rel="icon" href="favicon.png" type="image">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-<!--Header-->
-<header id="header_wrapper">
-  <div class="container">
-    <div class="header_box">
-      <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-        <div id="main-nav" class="collapse navbar-collapse navStyle">
+  <!--Header-->
+  <header id="header_wrapper">
+    <div class="container">
+      <div class="header_box">
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="navbar-header">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+              <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
+                class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          </div>
+          <div id="main-nav" class="collapse navbar-collapse navStyle">
             <ul class="nav navbar-nav" id="mainNav">
               <li class="active"><a href="index.html" class="scroll-link">Anasayfa</a></li>
               <li><a href="index.html" class="scroll-link">Hakkımızda</a></li>
               <li><a href="index.html" class="scroll-link">Ürün ve Hizmetlerimiz</a></li>
-              <li style="background-color: #fac800; border-radius: 12px;"><a href="#contact" class="scroll-link">Randevu Al</a></li>
+              <li style="background-color: #fac800; border-radius: 12px;"><a href="#contact" class="scroll-link">Randevu
+                  Al</a></li>
             </ul>
-        </div>
-     </nav>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
-</header>
-<!--Header_Bölümü--> 
-<h1 style="color: black; text-align: center; font-family: 'Raleway';" >Kuaför Randevu Sistemi</h1>
-<form style="margin-left: 10px;" id="randevuForm">
-  <div style="margin-left: 60px;" class="name_phone_input">
-    <input style="border-radius: 12px; margin-left: 15px;" class="input-text" type="text" name="ad" placeholder="Ad Soyad *" required>
-    <input style="border-radius: 12px; margin-left: 15px;" class="input-text" type="tel" name="telefon" placeholder="Telefon Numarası *" required>
-</div>
-  <br>
+  </header>
+  <!--Header_Bölümü-->
+  <h1 style="color: black; text-align: center; font-family: 'Raleway';">Kuaför Randevu Sistemi</h1>
+  <form style="margin-left: 10px;" id="randevuForm">
+    <div style="margin-left: 60px;" class="name_phone_input">
+      <input style="border-radius: 12px; margin-left: 15px;" class="input-text" type="text" name="ad"
+        placeholder="Ad Soyad *" required>
+      <input style="border-radius: 12px; margin-left: 15px;" class="input-text" type="tel" name="telefon"
+        placeholder="Telefon Numarası *" required>
+    </div>
+    <br>
 
-  <div id="hizmetler">
-    <div class="hizmet" onclick="selectService('hizmet1')">
-      <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
-      <label for="hizmet1">
-        <img src="img/haircut1.jpg" alt="Saç Kesimi" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Saç Kesimi</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 400 TL</p>
-      </label>
+    <div  id="hizmetler">
+      <div class="hizmet" onclick="selectService('hizmet1')">
+        <input type="checkbox" id="hizmet1" name="hizmet" value="Saç Kesimi">
+        <label for="hizmet">
+          <img src="img/saçkesimi.png" alt="Saç Kesimi" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Saç Kesimi</h3>
+          <p name="ücret" style="color: #585858">Farklı saç kesim işlemleri yapılmaktadır.</p>
+          <p name="ücret" style="color: #585858">Fiyat: 400 TL</p>
+        </label>
+      </div>
+      <div style="margin-left: 35px;" class="hizmet">
+        <input type="checkbox" id="hizmet2" name="hizmet" value="Saç Bakımı">
+        <label for="hizmet">
+          <img src="img/fön.png" alt="fön çekimi" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Fön çekimi</h3>
+          <p name="ücret" style="color: #585858">Fiyat: 200 TL</p>
+        </label>
+      </div>
+      <div style="margin-left: 35px;" class="hizmet">
+        <input type="checkbox" id="hizmet3" name="hizmet" value="Saç Bakımı">
+        <label for="hizmet3">
+          <img src="img/saçbakimi.png" alt="Saç Bakımı" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Saç Bakımı</h3>
+          <p name="ücret" style="color: #585858">Her saç tipinin ihtiyacına göre bakım yapılmaktadır.  </p>
+          <p name="ücret" style="color: #585858">Fiyat: 300 TL</p>
+        </label>
+      </div>
+      <div style="margin-left: 35px;" class="hizmet">
+        <input type="checkbox" id="hizmet4" name="hizmet" value="Saç Boyama">
+        <label for="hizmet4">
+          <img src="img/saçboyama.png" alt="Saç Boyama" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Saç Boyama</h3>
+          <p name="ücret" style="color: #585858">Saç boyama işlemi saç tipine ve saçın fazlalığına göre yapılır. istanilen renk seçenelerimiz mevcuttur.</p>
+          <p name="ücret" style="color: #585858">Fiyat: 350 TL</p>
+        </label>
+      </div>
+      <div class="hizmet" style="margin-left: 35px;">
+        <input type="checkbox" id="hizmet5" name="hizmet" value="Manicure">
+        <label for="hizmet5">
+          <img src="img/manikür.png" alt="Manicure" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Manicure</h3>
+          <p name="ücret" style="color: #585858">Manikür, ellerin ve tırnakların bakımını ve güzelliğini artıran bir hizmettir.</p>
+          <h4 name="ücret" style="color: #585858">
+          </h4><br>
+          <p name="ücret" style="color: #585858">Fiyat: 250 TL</p>
+        </label>
+      </div>
+      <div style="margin-left: 35px; " class="hizmet">
+        <input type="checkbox" id="hizmet6" name="hizmet" value="Cilt Bakımı">
+        <label for="hizmet6">
+          <img src="img/ciltbakimi.png" alt="Cilt Bakımı" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Cilt Bakımı</h3>
+          <p name="ücret" style="color: #585858">Her türlü cilt bakımı yapılmaktadır.</p>
+          <p name="ücret" style="color: #585858">Fiyat: 300 TL</p>
+        </label>
+      </div>
+      <div style="margin-left: 35px;" class="hizmet">
+        <input type="checkbox" id="hizmet7" name="hizmet" value="Lazer">
+        <label for="hizmet7">
+          <img src="img/lazer.png" alt="Lazer" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Lazer</h3>
+          <p name="ücret" style="color: #585858">Lazer işlemleri kaç bölge olduğuna bağlı olarak değişiklik göstermektedir.
+           Tüm vücut için lazer işlemi yapılmaktatır.</p>
+          <h4 name="ücret" style="color: #585858">Fiyat: 300 TL</h4>
+        </label>
+      </div>
+      <div style="margin-left: 35px;"  class="hizmet">
+        <input type="checkbox" id="hizmet8" name="hizmet" value="Saç Bakımı">
+        <label for="hizmet8">
+          <img src="img/gelinrandevü.png" alt="fön çekimi" style="border-radius: 20px;">
+          <h3 style="color: #585858;"><br>Gelin Randevusu</h3>
+          <p style="color: #585858">Gelin için bütün işlemler yapılır. Saç, makyaj, giydirme, kaç-bıyık, bakım vs.
+          </p><br>
+          <h4 name="ücret" style="color: #585858">Fiyat: 5000 TL</h4>
+        </label>
+      </div>
+      <!-- Hizmet eklemek için buraya yaz -->
     </div>
-    <div style="margin-left: 35px;" class="hizmet">
-      <input type="checkbox" id="hizmet2" name="hizmet" value="Saç Bakımı">
-      <label for="hizmet2">
-        <img src="img/haircut1.jpg" alt="Saç Bakımı" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Saç Bakımı</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 300 TL</p>
-      </label>
-    </div>
-    <div style="margin-left: 35px;" class="hizmet">
-      <input type="checkbox" id="hizmet3" name="hizmet" value="Saç Boyama">
-      <label for="hizmet3">
-        <img src="img/haircut1.jpg" alt="Saç Boyama" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Saç Boyama</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 350 TL</p>
-      </label>
-    </div>
-    <div class="hizmet">
-      <input type="checkbox" id="hizmet4" name="hizmet" value="Manicure">
-      <label for="hizmet4">
-        <img src="img/haircut1.jpg" alt="Manicure" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Manicure</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 250 TL</p>
-      </label>
-    </div>
-    <div style="margin-left: 35px;" class="hizmet">
-      <input type="checkbox" id="hizmet5" name="hizmet" value="Cilt Bakımı">
-      <label for="hizmet5">
-        <img src="img/haircut1.jpg" alt="Cilt Bakımı" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Cilt Bakımı</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 300 TL</p>
-      </label>
-    </div>
-    <div style="margin-left: 35px;" class="hizmet">
-      <input type="checkbox" id="hizmet6" name="hizmet" value="Lazer">
-      <label for="hizmet6">
-        <img src="img/haircut1.jpg" alt="Lazer" style="border-radius: 20px;">
-        <h3 style="color: #585858;"><br>Lazer</h3>
-        <p name="ücret" style="color: #585858">Fiyat: 300 TL</p>
-      </label>
-    </div>
-    <!-- Hizmet eklemek için buraya yaz -->
-  </div>
 
-  <input style="border-radius: 15px; margin-left: 60px;" class="input-btn" type="submit" value="Randevu Al">
-</form>
+    <input style="border-radius: 15px; margin-left: 60px;" class="input-btn" type="submit" value="Randevu Al">
+  </form>
 
-<div style="color: black; font-size: large; margin-left: 75px; margin-top: 10px;" id="result"></div>
+  <div style="color: black; font-size: large; margin-left: 75px; margin-top: 10px;" id="result"></div>
 
-<script>
-  function randevuAl(event) {
-    event.preventDefault(); // Formun submit işlemini engelle
-    var form = document.getElementById('randevuForm');
-    var ad = form.elements['ad'].value.trim();
-    var telefon = form.elements['telefon'].value.trim();
-    var selectedServices = document.querySelectorAll('input[name="hizmet"]:checked');
-    var resultDiv = document.getElementById('result');
-    var message = "";
+  <script>
+    function randevuAl(event) {
+      event.preventDefault(); // Formun submit işlemini engelle
+      var form = document.getElementById('randevuForm');
+      var ad = form.elements['ad'].value.trim();
+      var telefon = form.elements['telefon'].value.trim();
+      var selectedServices = document.querySelectorAll('input[name="hizmet"]:checked');
+      var resultDiv = document.getElementById('result');
+      var message = "";
 
-    // Uyarı mesajları
-    if (!ad || !telefon) {
-      resultDiv.innerHTML = "Lütfen ad ve telefon numarası giriniz.";
-      return;
-    }
+      // Uyarı mesajları
+      if (!ad || !telefon) {
+        resultDiv.innerHTML = "Lütfen ad ve telefon numarası giriniz.";
+        return;
+      }
 
-    if (selectedServices.length === 0) {
-      resultDiv.innerHTML = "Lütfen en az bir hizmet seçin.";
+      if (selectedServices.length === 0) {
+        resultDiv.innerHTML = "Lütfen en az bir hizmet seçin.";
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: "smooth"
+        });
+        return;
+      }
+
+      // Form verilerini göster
+      message += "Ad: " + ad + "<br>";
+      message += "Telefon: " + telefon + "<br>";
+      message += "<br>Seçtiğiniz hizmetler: <br>";
+      for (var i = 0; i < selectedServices.length; i++) {
+        message += selectedServices[i].value + "<br>";
+      }
+
+      message += "<br>Randevunuz alınmıştır.";
+      resultDiv.innerHTML = message;
       window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior:"smooth"
-      });
-      return;
-    }
-
-    // Form verilerini göster
-    message += "Ad: " + ad + "<br>";
-    message += "Telefon: " + telefon + "<br>";
-    message += "<br>Seçtiğiniz hizmetler: <br>";
-    for (var i = 0; i < selectedServices.length; i++) {
-      message += selectedServices[i].value + "<br>";
-    }
-
-    message += "<br>Randevunuz alınmıştır.";
-    resultDiv.innerHTML = message;
-    window.scrollTo({
         top: document.body.scrollHeight,
         behavior: 'smooth'
       });
-  }
+    }
 
-  // Forma submit olayı ekle
-  document.getElementById('randevuForm').addEventListener('submit', randevuAl);
-</script>
+    // Forma submit olayı ekle
+    document.getElementById('randevuForm').addEventListener('submit', randevuAl);
+  </script>
 
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/wow.js"></script> 
-<script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+  <script type="text/javascript" src="js/jquery.nav.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/wow.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
+
 </html>
